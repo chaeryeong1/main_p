@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ever-growing!-main</title>
+     <!--이미지로드-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+     <!-- 제이쿼리 -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+     <!-- 폰트어썸 -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+     <!-- 테일윈드 -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+   
+     <!--애니메이션,와우-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+     <!--스와이퍼-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+     <script>new WOW().init();</script>
+</head>
+<body>
+    
+</body>
+</html>
+<head>
+   
+  <style>
+/* 폰트적용 */
+@font-face {
+    font-family: 'LeferiBaseType-RegularA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html > body {
+  font-family: "LeferiBaseType-RegularA";
+}
+
+/*커스텀 라이브러리*/
+*{
+  padding:0;
+  margin:0;
+}
+
+.con{
+  width:1920px;
+  height:auto;
+  margin:0 auto;
+}
+
+@media ( min-width: 1900px ) {
+  body { overflow-x:hidden; }
+}
+
+/*뜨는애니메이션 라이브러리*/
+
+.main-1,.main-2{
+  animation-name: infinite-01 ;
+  animation-duration: 5s;
+  animation-iteration-count: infinite ;
+  animation-timing-function: linear ; 
+}
+
+
+@keyframes infinite-01{
+  0%{
+    transform: translatey(0) ;
+  }
+  
+  50%{
+    transform: translatey(-20%);    
+  }
+  
+  100%{
+    transform: translatey(0);    
+  }
+  
+}
+/*main-menu*/
+.main-menu-logo{
+  left:100px;
+  top:34px;
+}
+.main-menu-branding{
+  left:401px;
+  top:41px;
+}
+
+.main-menu-about{
+   left:596px;
+  top:41px;
+}
+.main-menu-portfolio{
+  left:760px;
+  top:41px;
+}
+.main-menu-process{
+  left:965px;
+  top:41px;
+}
+.main-menu-experience{
+  left:1153px;
+  top:41px;
+}
+
+
+
+
+
+/*main-menu-box*/
+.main-menu-box-Process{
+  left:1156px;
+  top:685px;
+}
+.main-menu-box-portfolio{
+  left:1365px;
+  top:685px;
+}
+
+
+
+
+
+
+/*main*/
+
+.main{
+  background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/main-bg.png');
+  width:1920px;
+  height:1080px;
+}
+
+.main-1{
+  left:108px;
+  top:157px;
+}
+
+.main-2{
+  top:271px;
+}
+
+
+  </style>
+  </head>
+  <section class="con">
+    <section class="main relative">
+      <div class="main-menu relative">
+        <span class="main-menu-logo absolute">
+         <a href="https://main.crmmii.com"> <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/pink-logo.png" alt=""></a>
+        </span>
+        <span class="main-menu-branding absolute"><a href="https://branding.crmmii.com"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/BRANDING.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/BRANDING-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/BRANDING.png'"></a></span>
+         <span class="main-menu-about absolute"><a href="https://about.crmmii.com"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/ABOUT.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/ABOUT-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/ABOUT.png'"></a></span>
+          <span class="main-menu-portfolio absolute"><a href="https://portfolio1.crmmii.com"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/PORTFOLIO.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/PORTFOLIO-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/PORTFOLIO.png'"></a></span>
+          <span class="main-menu-process absolute"><a href="https://process.crmmii.com"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/PROCESS.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/PROCESS-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/PROCESS.png'"></a></span>
+           <span class="main-menu-experience absolute"><a href="https://experience.crmmii.com"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/EXPERIENCE.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/EXPERIENCE-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/EXPERIENCE.png'"></a></span>
+  
+      </div>
+      <div class="main-menu-box relative">
+        <span class="main-menu-box-portfolio absolute"><a href="https://portfolio1.crmmii.com"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/View Portfolio.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/View Portfolio-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/View Portfolio.png'"></a></span>
+        <span class="main-menu-box-Process absolute"><a href="https://process.crmmii.com"><img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/View Process.png" onmouseover="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/View Process-h.png'" onmouseout="this.src='https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/View Process.png'"></a></span>
+      </div>
+      <div class="main-img-box rleative">
+      <span class="main-1 absolute">
+        <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/a-1.png" alt="">
+      </span>
+        <span class="main-2 absolute">
+        <img src="https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/a-2.png" alt="">
+      </span>
+        </div>
+    </section>
+  </section>

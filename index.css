@@ -1,0 +1,115 @@
+/* 폰트적용 */
+@font-face {
+    font-family: 'LeferiBaseType-RegularA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html > body {
+  font-family: "LeferiBaseType-RegularA";
+}
+
+/*커스텀 라이브러리*/
+*{
+  padding:0;
+  margin:0;
+}
+
+.con{
+  width:1920px;
+  height:auto;
+  margin:0 auto;
+}
+
+@media ( min-width: 1900px ) {
+  body { overflow-x:hidden; }
+}
+
+/*뜨는애니메이션 라이브러리*/
+
+.main-1,.main-2{
+  animation-name: infinite-01 ;
+  animation-duration: 5s;
+  animation-iteration-count: infinite ;
+  animation-timing-function: linear ; 
+}
+
+
+@keyframes infinite-01{
+  0%{
+    transform: translatey(0) ;
+  }
+  
+  50%{
+    transform: translatey(-20%);    
+  }
+  
+  100%{
+    transform: translatey(0);    
+  }
+  
+}
+/*main-menu*/
+.main-menu-logo{
+  left:100px;
+  top:34px;
+}
+.main-menu-branding{
+  left:401px;
+  top:41px;
+}
+
+.main-menu-about{
+   left:596px;
+  top:41px;
+}
+.main-menu-portfolio{
+  left:760px;
+  top:41px;
+}
+.main-menu-process{
+  left:965px;
+  top:41px;
+}
+.main-menu-experience{
+  left:1153px;
+  top:41px;
+}
+
+
+
+
+
+/*main-menu-box*/
+.main-menu-box-Process{
+  left:1156px;
+  top:685px;
+}
+.main-menu-box-portfolio{
+  left:1365px;
+  top:685px;
+}
+
+
+
+
+
+
+/*main*/
+
+.main{
+  background-image:url('https://cdn.jsdelivr.net/gh/chaeryeong1/portfolio_img/portfolio/main/main-bg.png');
+  width:1920px;
+  height:1080px;
+}
+
+.main-1{
+  left:108px;
+  top:157px;
+}
+
+.main-2{
+  top:271px;
+}
+
